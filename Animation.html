@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:400px;
+            width: 500px;
+            background-color:blue ;
+            position: relative;
+            top:100px;
+            left:100px;
+
+        }
+        .box{
+            height:200px ;
+            width:200px ;
+            margin: auto;
+            position:absolute ;
+            background-color:aquamarine;
+            font-size:2rem;
+            animation: colorvalue 4s   in 5;
+
+        }
+        /* @keyframes slidble {
+            from{
+                transform:translate(0,0);
+            }
+            to{
+                transform: translate();
+                opacity: 0,3;
+            }
+        }
+         */
+
+         @keyframes colorvalue{
+            0%{
+                left: 0px;
+                background-color: yellow;
+            }
+             30%{
+                background-color: orangered;
+            }
+             50%{
+                background-color: red;
+            }
+             70%{
+                background-color:crimson;
+            }
+            100%{
+                left:auto;
+                background-color:brown ;
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+    </div>
+    
+</body>
+</html>

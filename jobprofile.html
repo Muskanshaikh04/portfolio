@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body>
+    <form action="">
+        <lable for="name" >Enter Applicant Full Name:</lable>
+        <input type="text" Id="name" name="name" placeholder="enter full name"  required>
+        <br><br>
+
+
+         <div>
+         <lable for="email" >Email:</lable>
+         <input type="email" Id="email" name="email" placeholder="abc@gmail.com" required>
+         <br><br>
+         </div>
+
+         <div>
+         <lable for="pho" >Phone Number:</lable>
+         <input type="tel" Id="pho" name="pho" placeholder="ex.727......." minlength="10" maxlength="10" required>
+         <br><br>
+         </div>
+
+         <div>
+            <label>Gender:  </label>
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="male" value="male"> </label>
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female" value="female"> </label>
+        </div><br>
+
+        <div>
+             <label for="position">
+               Position Applying for:
+            </label>
+            <select name="position" id="position">
+               <option value="FullStack Developer">Fullstack Developer</option>
+               <option value="Backend Developer">Backend Developer</option>
+               <option value="Frontend developer">Frontend Developer</option>
+            </select>
+        </div> <br><br>
+         <div>
+            <label for="qualification">Highest Qualification:</label>
+            <input type="text" id="qualification" name="qualification" required><br><br>
+         </div>
+
+         <div>
+            <label for="skills">Skills:</label>
+            <textarea id="skilss"  name="skills" rows="4" cols="50" placeholder="E.g.. java ,python, html, css, sql"  required></textarea><br><br>
+         </div>
+
+         <div>
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required><br><br>
+         </div>
+
+         <input type="submit" value="SubmitApplication">
+
+
+    </form>
+    
+</body>
+</html>

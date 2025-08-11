@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smooth Animation</title>
+<style>
+    .container {
+        height: 400px;
+        width: 500px;
+        background-color: blue;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        /* overflow: hidden; so box won't overflow */
+    }
+    .box {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        background-color: aquamarine;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: colorMove 4s ease infinite;
+    }
+
+    @keyframes colorMove {
+        0% {
+            left: 0px;
+            background-color: yellow;
+        }
+        25% {
+            background-color: orangered;
+        }
+        50% {
+            background-color: red;
+        }
+        75% {
+            transform: scale(1,1);
+            background-color: purple;
+        }
+        100% {
+            left: 100%;
+            background-color: crimson;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+    </div>
+</body>
+</html>
